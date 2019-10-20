@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+.header{
+	@include flex;
+	@include align-items(ccenter);
+	@include justify-content(space-between);
+	padding: 7px 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: $white;
+	z-index: 10;
+	.header-left,
+	.header-left ul{
+		@include flex;
+		@include justify-content(center);
+		@include align-items(center);
+	}
+	.header-left ul{
+		list-style-type: none;
+		margin-bottom: 0;
+		li{
+			padding-left: 15px;
+		}
+	}
+}
