@@ -8,7 +8,12 @@ body {
   margin-top: 94px;
 }
 
-.header {
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -28,12 +33,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background: #FFF;
   z-index: 10;
 }
-.header .header-left,
-.header .header-left ul {
+header .header-right,
+header .header-right ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -50,12 +55,24 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-.header .header-left ul {
+header .header-right ul {
   list-style-type: none;
-  margin-bottom: 0;
+  margin: 0;
 }
-.header .header-left ul li {
+header .header-right ul li {
   padding-left: 15px;
+}
+
+footer {
+  background: #000;
+  padding: 15px 0;
+  color: #FFF;
+}
+footer.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

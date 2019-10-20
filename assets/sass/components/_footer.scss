@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+footer{
+	background: $black;
+	padding: 15px 0;
+	color: $white;
+	&.sticky{
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
